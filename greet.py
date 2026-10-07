@@ -2,7 +2,8 @@
 
 
 def greet(name):
-    return f"Hello, {name}!"
+    normalized_name = name.strip() or "Guest"
+    return f"Hello, {normalized_name}!"
 
 
 if __name__ == "__main__":
